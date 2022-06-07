@@ -41,17 +41,17 @@ public class FirstApp {
                 : 30000;
         System.out.println(aint);
 
-        int[] array ={6,3,3,1,1};
+        int[] myArray ={6,3,3,1,1};
 
-        for (int i=0;i<array.length;i++) {
-            System.out.println(array[i]);
+        for (int i=0;i<myArray.length;i++) {
+            System.out.println(myArray[i]);
         }
         int buf;
-        for (int i=0;i<array.length-1;i++) {
-            if array[i] > array[i+1] {
-                    buf = array[i];
-                    array[i] = array[i+1];
-                    array[i+1] = buf;
+        for (int i=0;i<myArray.length-1;i++) {
+            if (myArray[i] > myArray[i+1]) {
+                    buf = myArray[i];
+                myArray[i] = myArray[i+1];
+                myArray[i+1] = buf;
             }
         }
 
